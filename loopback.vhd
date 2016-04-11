@@ -171,7 +171,7 @@ clkControl : mydcm
 		END CASE;
 	END PROCESS state_trans;
 	
-	--Handle CL to Register transfers
+	--Handle CL to Register  transfers
 	output: PROCESS(d_clk)
 	BEGIN
 	
@@ -184,6 +184,8 @@ clkControl : mydcm
 			en_o <= tmp_en_o;
 			if en_o = '1' then
 				data <= d_int;
+			else
+				data <= (others => 'Z');
 			end if;
 		end if;
 		

@@ -1,0 +1,89 @@
+
+ restart
+isim force add /loopback/clk_in 1 -radix bin -value 0 -radix bin -time 8335 ps -repeat 16670 ps
+isim force add /loopback/clk_in 1 -radix bin -value 0 -radix bin -time 8335 ps -repeat 16670 ps
+isim force add /loopback/reset_l 0 -radix bin
+isim force add /loopback/reset_l 0 -radix bin
+ isim force add /loopback/rxf_l 1 -radix bin
+ isim force add /loopback/rxf_l 1 -radix bin
+ isim force add /loopback/data 11111111 -radix bin
+ isim force add /loopback/data 11111111 -radix bin
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ isim force add /loopback/reset_l 1 -radix bin
+ isim force add /loopback/reset_l 1 -radix bin
+ run 17 ns
+ isim force add /loopback/rxf_l 0 -radix bin
+ isim force add /loopback/rxf_l 0 -radix bin
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ isim force add /loopback/data zzzzzzzz -radix bin
+ isim force add /loopback/data zzzzzzzz -radix bin
+ isim force add /loopback/rxf_l 1 -radix bin
+ isim force add /loopback/rxf_l 1 -radix bin
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
+ run 17 ns
