@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/mydcm.vhd"
+vhdl work "loopback.vhd"
