@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: loopback.prj
 
@@ -434,17 +434,17 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
 -------------------------------------------------------------------------
 Offset:              3.663ns (Levels of Logic = 3)
   Source:            reset_l (PAD)
-  Destination:       memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram (RAM)
   Destination Clock: clk_in rising 0.4X
 
-  Data Path: reset_l to memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+  Data Path: reset_l to memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             9   1.222   0.829  reset_l_IBUF (reset_l_IBUF)
      INV:I->O             32   0.206   1.291  reset_h1_INV_0 (reset_h)
      begin scope: 'memory:rstb'
-     RAMB16BWER:RSTB           0.115          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+     RAMB16BWER:RSTB           0.115          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram
     ----------------------------------------
     Total                      3.663ns (1.543ns logic, 2.120ns route)
                                        (42.1% logic, 57.9% route)
@@ -485,12 +485,12 @@ clk_in         |    5.299|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.32 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.12 secs
  
 --> 
 
-Total memory usage is 263900 kilobytes
+Total memory usage is 255080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (nt)
 Xilinx Mapping Report File for Design 'loopback'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 13 02:39:59 2016
+Mapped Date    : Wed Apr 13 13:58:13 2016
 
 Design Summary
 --------------
@@ -35,12 +35,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   111 out of   1,430    7%
+  Number of occupied Slices:                   101 out of   1,430    7%
   Number of MUXCYs used:                        40 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          233
-    Number with an unused Flip Flop:           166 out of     233   71%
-    Number with an unused LUT:                   9 out of     233    3%
-    Number of fully used LUT-FF pairs:          58 out of     233   24%
+  Number of LUT Flip Flop pairs used:          231
+    Number with an unused Flip Flop:           164 out of     231   70%
+    Number with an unused LUT:                   7 out of     231    3%
+    Number of fully used LUT-FF pairs:          60 out of     231   25%
     Number of unique control sets:               6
     Number of slice register sites lost
       to control set restrictions:              25 out of  11,440    1%
@@ -53,7 +53,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        28 out of     102   27%
-    Number of LOCed IOBs:                       27 out of      28   96%
+    Number of LOCed IOBs:                       28 out of      28  100%
     IOB Flip Flops:                             21
 
 Specific Feature Utilization:
@@ -93,9 +93,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.04
 
-Peak Memory Usage:  373 MB
-Total REAL time to MAP completion:  11 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  297 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   12 secs 
 
 Table of Contents
 -----------------
@@ -132,9 +132,6 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 28 IOs, 27 are locked
-   and 1 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM comp clkControl/dcm_sp_inst,
@@ -203,7 +200,7 @@ Section 6 - IOB Properties
 | siwua                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | txe_l                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | v_sync                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
-| wdi                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| wdi                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | wr_l                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

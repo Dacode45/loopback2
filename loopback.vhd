@@ -8,7 +8,7 @@ entity loopback is
 PORT(
 		clk_in : IN STD_LOGIC;
 		
-		--control
+		-- control
 		reset_l : IN STD_LOGIC;
 		
 		rxf_l : IN STD_LOGIC;
@@ -19,7 +19,7 @@ PORT(
 		siwua : OUT STD_LOGIC;
 		wdi: OUT STD_LOGIC;
 		data : INOUT STD_LOGIC_VECTOR(7 downto 0);
-		--- vga
+		---  vga
 		
 		h_sync : OUT STD_LOGIC;
 		v_sync : OUT STD_LOGIC;
@@ -62,7 +62,7 @@ port
 end component;
 
 	--States
-	TYPE states IS (s0, s1, s2, s3, s4, s5, s6, s7);
+	TYPE states IS (s0, s1, s2, s3, s3_WAIT, s4, s5, s6, s6_WAIT, s7);
 	
 	SIGNAL state: states := s0;
 	SIGNAL nxt_state : states := s0;
@@ -76,9 +76,12 @@ end component;
 	--------------------------------------------
 		--read byte
 	SIGNAL d_lower : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
+	SIGNAL en_lower: STD_LOGIC:= '0';
 	SIGNAL d_upper : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
+	SIGNAL en_upper: STD_LOGIC:= '0';
 		--Memory control
 	SIGNAL mem_set : STD_LOGIC_VECTOR(0 downto 0) := (others => '0'); --memory should be set the next tick
+	SIGNAL nxt_mem_set: STD_LOGIC_VECTOR(0 downto 0) := (others => '0');
 	SIGNAL mem_full : STD_LOGIC := '0';
 	SIGNAL d_addr_counter : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
 	SIGNAL v_addr_counter : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
@@ -103,8 +106,8 @@ end component;
 		--Read Control
 	SIGNAL nxt_oe_l : STD_LOGIC;
 	SIGNAL nxt_rd_l : STD_LOGIC;
-	SIGNAL en_lower : STD_LOGIC;
-	SIGNAL en_upper : STD_LOGIC;
+	SIGNAL nxt_en_lower : STD_LOGIC;
+	SIGNAL nxt_en_upper : STD_LOGIC;
 		--video counter resets
 	SIGNAL h_counter_reset : STD_LOGIC;
 	SIGNAL v_counter_reset : STD_LOGIC;
@@ -143,27 +146,42 @@ memory : myram
     doutb => d_out
   );
 
-	--Handle register transfers for d clock.
+	--Handle register  transfers for d clock.
 	d_clkd : PROCESS (d_clk)
 	BEGIN
 		--Handle states
 		if (rising_edge(d_clk)) then
 		
-			if(crap='1' or reset_h='1') then
+			if((crap='1') or reset_h='1') then
 				state <= s0;
 			else 
 				state <= nxt_state;
 			end if;
+			--Memoryset
+			mem_set <= nxt_mem_set;
+
+			--Keep Signals In sync
+			en_upper <= nxt_en_upper;
+			en_lower <= nxt_en_lower;
 			
+			--Lower Enable
 			if en_lower = '1' then
 				d_lower <= data;
 			end if;
-			
+			-- Lower Reset
+			if state = s0 then
+				d_lower <= (others => '0');
+			end if;
+			--Upper Enable
 			if en_upper = '1' then
 				d_upper <= d_lower;
 			end if;
-			
-			if(state = s0 or state = s1 or state = s2 or state = s3 or state = s4 or state = s5 or state = s6 or state = s7) then
+			--Upper Reset
+			if state = s0 then
+				d_upper <= (others => '0');
+			end if;
+			--Watchdog
+			if(state = s0 or state = s1 or state = s2 or state = s3 or state = s3_WAIT or state = s4 or state = s5 or state = s6 or state = s6_WAIT or state = s7) then
 				watch_dog_counter <= watch_dog_counter +1;
 			else
 				watch_dog_counter <= (others => '0');
@@ -224,7 +242,7 @@ memory : myram
 			if (state = s0) then
 				d_addr_counter <= ( others => '0');
 			else
-				if (state = s7 and mem_full = '0') then
+				if (mem_set = "1" and mem_full = '0') then
 					d_addr_counter <= d_addr_counter + 1;
 				end if;
 			end if;
@@ -242,14 +260,16 @@ memory : myram
 								nxt_state <= s2;
 							end if;
 			when s2 => nxt_state <= s3;
-			when s3 => nxt_state <= s4;
+			when s3 => nxt_state <= s3_WAIT;
+			when s3_WAIT => nxt_state <= s4;
 			when s4 => if (rxf_l = '1') then
 								nxt_state <= s4;
 							else
 								nxt_state <= s5;
 							end if;
 			when s5 => nxt_state <= s6;
-			when s6 => nxt_state <= s7;
+			when s6 => nxt_state <= s6_WAIT;
+			when s6_WAIT => nxt_state <= s7;
 			when s7 => nxt_state <= s1;
 		END CASE;
 	END PROCESS state_trans;
@@ -273,24 +293,24 @@ memory : myram
 		end if;
 	END PROCESS color_data;
 	
-	--Read FTDI Logic
+	--Read  FTDI Logic
 	nxt_oe_l <= '0' when (state = s2 or state = s3 or state = s5 or state = s6) else '1';
 	nxt_rd_l <= '0' when (state = s3 or state = s6) else '1';
-	en_lower <= '1' when (state = s3 or state = s6) else '0';
-	en_upper <= '1' when (state = s6 ) else '0';
+	nxt_en_lower <= '1' when (state = s3 or state = s6) else '0';
+	nxt_en_upper <= '1' when (state = s6 ) else '0';
 	
 	--Write MEM Logic
 	concat <= d_upper & d_lower;
 	crap <= '1' when not (d_upper & d_lower) = 0 else '0';
 	d_in <= concat(8 downto 0);
 	mem_full <= '1' when not (d_addr_counter) = 0 else '0';
-	mem_set <= (others => '1') when (state = s7 ) else (others => '0');
+	nxt_mem_set <= (others => '1') when (state = s7 ) else (others => '0');
 	
 	--RESET HCOUNTER
 	h_counter_reset <= '1' when (h_counter = 799) else '0';
 	v_counter_reset <= '1' when (v_counter = 524) else '0';
-	--GEN ADDRESS to get color
-	nxt_v_addr_counter <= (v_counter(7 downto 0) + (256-45)) & (h_counter(7 downto 0) + (256-156));
+	--GEN ADDRESS to get color before color enable
+	nxt_v_addr_counter <= (v_counter(7 downto 0) + (256-45)) & (h_counter(7 downto 0) + (256-157));
 	--enable color the tick before data comes out. 
 	color_en <= '1' WHEN ((159 <= h_counter) and (h_counter < 800) and (44 < v_counter) and (v_counter < 525)) else '0';
 	--sync
@@ -299,15 +319,15 @@ memory : myram
 	h_sync <= tmp_h_sync;
 	v_sync <= tmp_v_sync;
 	--color
-	r0 <= rgb(8);
+	r2 <= rgb(8);
 	r1 <= rgb(7);
-	r2 <= rgb(6);
-	g0 <= rgb(5);
+	r0 <= rgb(6);
+	g2 <= rgb(5);
 	g1 <= rgb(4);
-	g2 <= rgb(3);
-	b0 <= rgb(2);
+	g0 <= rgb(3);
+	b2 <= rgb(2);
 	b1 <= rgb(1);
-	b2 <= rgb(0);
+	b0 <= rgb(0);
 	-- Drive Watch Dog
 	wdi <= '1' when not (watch_dog_counter) = 0 else '0';
 	--Currently Undriven signals

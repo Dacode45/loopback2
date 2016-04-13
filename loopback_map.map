@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (nt)
 Xilinx Map Application Log File for Design 'loopback'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 13 02:39:59 2016
+Mapped Date    : Wed Apr 13 13:58:13 2016
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,60 +19,56 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 secs 
-Total CPU  time at the beginning of Placer: 5 secs 
+Total REAL time at the beginning of Placer: 6 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:a9b31a59) REAL time: 6 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:bd9dcfc9) REAL time: 7 secs 
 
 Phase 2.7  Design Feasibility Check
-INFO:Place:834 - Only a subset of IOs are locked. Out of 28 IOs, 27 are locked
-   and 1 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:a9b31a59) REAL time: 6 secs 
+Phase 2.7  Design Feasibility Check (Checksum:bd9dcfc9) REAL time: 7 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:a9b31a59) REAL time: 6 secs 
+Phase 3.31  Local Placement Optimization (Checksum:bd9dcfc9) REAL time: 7 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-....
+
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:900a970) REAL time: 8 secs 
+(Checksum:1ceb5ee0) REAL time: 10 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:900a970) REAL time: 8 secs 
+Phase 5.36  Local Placement Optimization (Checksum:1ceb5ee0) REAL time: 10 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:900a970) REAL time: 8 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:1ceb5ee0) REAL time: 10 secs 
 
 Phase 7.3  Local Placement Optimization
-....
-Phase 7.3  Local Placement Optimization (Checksum:2757e4b0) REAL time: 8 secs 
+Phase 7.3  Local Placement Optimization (Checksum:1ceb5ee0) REAL time: 10 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:2b18090a) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:1ceb5ee0) REAL time: 10 secs 
 
 Phase 9.8  Global Placement
-...........................................
-...................................................................................................................................................
-................................
-...............................
-Phase 9.8  Global Placement (Checksum:f3b3620c) REAL time: 10 secs 
+.....................
+......................................................................................................................
+..................
+.............
+Phase 9.8  Global Placement (Checksum:bfc14afd) REAL time: 11 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f3b3620c) REAL time: 10 secs 
+Phase 10.5  Local Placement Optimization (Checksum:bfc14afd) REAL time: 11 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:30ef0f74) REAL time: 10 secs 
+Phase 11.18  Placement Optimization (Checksum:fa3557da) REAL time: 12 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:30ef0f74) REAL time: 10 secs 
+Phase 12.5  Local Placement Optimization (Checksum:fa3557da) REAL time: 12 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:30ef0f74) REAL time: 10 secs 
+Phase 13.34  Placement Validation (Checksum:fa3557da) REAL time: 12 secs 
 
-Total REAL time to Placer completion: 10 secs 
-Total CPU  time to Placer completion: 10 secs 
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 12 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -101,12 +97,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   111 out of   1,430    7%
+  Number of occupied Slices:                   101 out of   1,430    7%
   Number of MUXCYs used:                        40 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          233
-    Number with an unused Flip Flop:           166 out of     233   71%
-    Number with an unused LUT:                   9 out of     233    3%
-    Number of fully used LUT-FF pairs:          58 out of     233   24%
+  Number of LUT Flip Flop pairs used:          231
+    Number with an unused Flip Flop:           164 out of     231   70%
+    Number with an unused LUT:                   7 out of     231    3%
+    Number of fully used LUT-FF pairs:          60 out of     231   25%
     Number of unique control sets:               6
     Number of slice register sites lost
       to control set restrictions:              25 out of  11,440    1%
@@ -119,7 +115,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        28 out of     102   27%
-    Number of LOCed IOBs:                       27 out of      28   96%
+    Number of LOCed IOBs:                       28 out of      28  100%
     IOB Flip Flops:                             21
 
 Specific Feature Utilization:
@@ -159,9 +155,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.04
 
-Peak Memory Usage:  373 MB
-Total REAL time to MAP completion:  11 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  297 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   12 secs 
 
 Mapping completed.
 See MAP report file "loopback_map.mrp" for details.

@@ -218,7 +218,295 @@
 <msg type="warning" file="HDLCompiler" num="220" delta="old" >"C:\vhdl_stuff\loopback2\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_prim_width.vhd" Line 979: Assignment ignored
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\vhdl_stuff\loopback2\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_prim_wrapper_s6.vhd" Line 490: Net &lt;<arg fmt="%s" index="1">douta_i[8]</arg>&gt; does not have a driver.
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\vhdl_stuff\loopback2\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_prim_wrapper_s6_init.vhd" Line 529: Net &lt;<arg fmt="%s" index="1">douta_i[8]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
+</msg>
+
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">C:/vhdl_stuff/loopback2/ipcore_dir/tmp/_cg/myram.mif</arg>
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="321" delta="old" >"C:\vhdl_stuff\loopback2\ipcore_dir\tmp\_cg\_dbg\blk_mem_gen_v7_3\blk_mem_gen_generic_cstr.vhd" Line 1546: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
@@ -689,7 +977,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_1</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_1</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -710,7 +998,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_2</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_2</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -731,7 +1019,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_3</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_3</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -752,7 +1040,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_4</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_4</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -773,7 +1061,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_5</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_5</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -794,7 +1082,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_6</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_6</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -815,7 +1103,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_7</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_7</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -836,7 +1124,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_8</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_8</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -857,7 +1145,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_9</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_9</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -878,7 +1166,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_10</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_10</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -899,7 +1187,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_11</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_11</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -920,7 +1208,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_12</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_12</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -941,7 +1229,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_13</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_13</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -962,7 +1250,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_14</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_14</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -983,7 +1271,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_15</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_15</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1004,7 +1292,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_16</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_16</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1025,7 +1313,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_17</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_17</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1046,7 +1334,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_18</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_18</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1067,7 +1355,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_19</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_19</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1088,7 +1376,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_20</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_20</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1109,7 +1397,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_21</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_21</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1130,7 +1418,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_22</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_22</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1151,7 +1439,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_23</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_23</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1172,7 +1460,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_24</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_24</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1193,7 +1481,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_25</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_25</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1214,7 +1502,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_26</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_26</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1235,7 +1523,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_27</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_27</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1256,7 +1544,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_28</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_28</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1277,7 +1565,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_29</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_29</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1298,7 +1586,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_30</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_30</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1319,7 +1607,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_31</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_31</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTSBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1340,7 +1628,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DINB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_32</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">douta_i</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">blk_mem_gen_prim_wrapper_s6_init_32</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">MUX_RST</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

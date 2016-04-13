@@ -1,7 +1,7 @@
-Release 14.7 par P.20131013 (nt64)
+Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-41O1VB0::  Wed Apr 13 02:40:13 2016
+DESKTOP-41O1VB0::  Wed Apr 13 13:58:30 2016
 
 par -w -intstyle ise -ol high -xe n -mt off loopback_map.ncd loopback.ncd
 loopback.pcf 
@@ -40,12 +40,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   111 out of   1,430    7%
+  Number of occupied Slices:                   101 out of   1,430    7%
   Number of MUXCYs used:                        40 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          233
-    Number with an unused Flip Flop:           166 out of     233   71%
-    Number with an unused LUT:                   9 out of     233    3%
-    Number of fully used LUT-FF pairs:          58 out of     233   24%
+  Number of LUT Flip Flop pairs used:          231
+    Number with an unused Flip Flop:           164 out of     231   70%
+    Number with an unused LUT:                   7 out of     231    3%
+    Number of fully used LUT-FF pairs:          60 out of     231   25%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -57,7 +57,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        28 out of     102   27%
-    Number of LOCed IOBs:                       27 out of      28   96%
+    Number of LOCed IOBs:                       28 out of      28  100%
     IOB Flip Flops:                             21
 
 Specific Feature Utilization:
@@ -99,38 +99,38 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal txe_l_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 5003 unrouted;      REAL time: 4 secs 
+Phase  1  : 5003 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 2381 unrouted;      REAL time: 4 secs 
+Phase  2  : 2381 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 851 unrouted;      REAL time: 6 secs 
+Phase  3  : 980 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 851 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  4  : 980 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
 
 Updating file: loopback.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  6  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  7  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  8  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  8  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  9  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  9  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase 10  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+Phase 10  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase 11  : 0 unrouted; (Setup:183, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
-Total REAL time to Router completion: 10 secs 
-Total CPU time to Router completion: 11 secs 
+Phase 11  : 0 unrouted; (Setup:270, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+Total REAL time to Router completion: 14 secs 
+Total CPU time to Router completion: 14 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -148,9 +148,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|               d_clk |  BUFGMUX_X2Y3| No   |   55 |  0.598     |  1.669      |
+|               d_clk |  BUFGMUX_X2Y3| No   |   55 |  0.599     |  1.669      |
 +---------------------+--------------+------+------+------------+-------------+
-|               v_clk | BUFGMUX_X3Y13| No   |   55 |  0.585     |  1.655      |
+|               v_clk | BUFGMUX_X3Y13| No   |   55 |  0.584     |  1.655      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -161,7 +161,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 183 (Setup: 183, Hold: 0, Component Switching Limit: 0)
+Timing Score: 270 (Setup: 270, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -188,19 +188,19 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* OFFSET = OUT 5.667 ns AFTER COMP "clk_in" | MAXDELAY    |    -0.183ns|     5.850ns|       1|         183
+* OFFSET = OUT 5.667 ns AFTER COMP "clk_in" | MAXDELAY    |    -0.270ns|     5.937ns|       1|         270
 ----------------------------------------------------------------------------------------------------------
-  OFFSET = IN 9 ns VALID 9.5 ns BEFORE COMP | SETUP       |     2.835ns|     6.165ns|       0|           0
+  OFFSET = IN 9 ns VALID 9.5 ns BEFORE COMP | SETUP       |     2.856ns|     6.144ns|       0|           0
    "clk_in"                                 | HOLD        |     0.792ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_clkControl_clk0 = PERIOD TIMEGRP "clkC | SETUP       |     7.339ns|     9.327ns|       0|           0
-  ontrol_clk0" TS_1 HIGH 50%                | HOLD        |     0.315ns|            |       0|           0
+  TS_clkControl_clk0 = PERIOD TIMEGRP "clkC | SETUP       |     7.743ns|     8.923ns|       0|           0
+  ontrol_clk0" TS_1 HIGH 50%                | HOLD        |     0.327ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_1 = PERIOD TIMEGRP "clk_in" 16.666 ns  | MINLOWPULSE |     8.666ns|     8.000ns|       0|           0
   HIGH 50%                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clkControl_clkfx = PERIOD TIMEGRP "clk | SETUP       |    28.362ns|    11.636ns|       0|           0
-  Control_clkfx" TS_1 / 0.416666667         | HOLD        |     0.316ns|            |       0|           0
+  TS_clkControl_clkfx = PERIOD TIMEGRP "clk | SETUP       |    29.204ns|    10.794ns|       0|           0
+  Control_clkfx" TS_1 / 0.416666667         | HOLD        |     0.440ns|            |       0|           0
    HIGH 50%                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_2 = PERIOD TIMEGRP "v_clk" 40 ns HIGH  | MINPERIOD   |    36.876ns|     3.124ns|       0|           0
@@ -218,9 +218,9 @@ Derived Constraints for TS_1
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_1                           |     16.666ns|      8.000ns|      9.327ns|            0|            0|            0|         3322|
-| TS_clkControl_clk0            |     16.666ns|      9.327ns|          N/A|            0|            0|         1530|            0|
-| TS_clkControl_clkfx           |     39.998ns|     11.636ns|          N/A|            0|            0|         1792|            0|
+|TS_1                           |     16.666ns|      8.000ns|      8.923ns|            0|            0|            0|         3322|
+| TS_clkControl_clkfx           |     39.998ns|     10.794ns|          N/A|            0|            0|         1792|            0|
+| TS_clkControl_clk0            |     16.666ns|      8.923ns|          N/A|            0|            0|         1530|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -232,10 +232,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 11 secs 
-Total CPU time to PAR completion: 11 secs 
+Total REAL time to PAR completion: 14 secs 
+Total CPU time to PAR completion: 14 secs 
 
-Peak Memory Usage:  373 MB
+Peak Memory Usage:  294 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

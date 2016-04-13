@@ -2,6 +2,7 @@
 _xmsgs\pn_parser.xmsgs
 myram.asy
 myram.gise
+myram.mif
 myram.ngc
 myram.sym
 myram.vhd

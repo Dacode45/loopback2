@@ -35,8 +35,8 @@ Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3(
 Compiling architecture myram_a of entity myram [myram_default]
 Compiling architecture behavioral of entity loopback
 Time Resolution for simulation is 1ps.
-Waiting for 14 sub-compilation(s) to finish...
+Waiting for 15 sub-compilation(s) to finish...
 Compiled 40 VHDL Units
 Built simulation executable C:/vhdl_stuff/loopback2/loopback_isim_beh.exe
-Fuse Memory Usage: 68684 KB
-Fuse CPU Usage: 1780 ms
+Fuse Memory Usage: 186476 KB
+Fuse CPU Usage: 10014 ms

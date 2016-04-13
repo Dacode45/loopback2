@@ -115,9 +115,14 @@ NET "b1" SLEW = SLOW;
 NET "b2" IOSTANDARD = LVCMOS33;
 NET "b2" DRIVE = 12;
 NET "b2" SLEW = SLOW;
+NET "wdi" IOSTANDARD = LVCMOS33;
+NET "wdi" DRIVE = 12;
+NET "wdi" SLEW = SLOW;
+
 
 # PlanAhead Generated physical constraints 
 
 CONFIG PROHIBIT = P144;
+NET "wdi" LOC = P83;
 NET "reset_l" LOC = P78;
 NET "clk_in" LOC = P84;

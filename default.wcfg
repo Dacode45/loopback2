@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/vhdl_stuff/loopback2/loopback_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="loopback" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="54" />
+   <wvobject fp_name="/loopback/clk_in" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+      <obj_property name="label">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/reset_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_l</obj_property>
+      <obj_property name="ObjectShortName">reset_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/rxf_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxf_l</obj_property>
+      <obj_property name="ObjectShortName">rxf_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/txe_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txe_l</obj_property>
+      <obj_property name="ObjectShortName">txe_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/oe_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">oe_l</obj_property>
+      <obj_property name="ObjectShortName">oe_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/rd_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_l</obj_property>
+      <obj_property name="ObjectShortName">rd_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/wr_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_l</obj_property>
+      <obj_property name="ObjectShortName">wr_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/siwua" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">siwua</obj_property>
+      <obj_property name="ObjectShortName">siwua</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/wdi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wdi</obj_property>
+      <obj_property name="ObjectShortName">wdi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/h_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">h_sync</obj_property>
+      <obj_property name="ObjectShortName">h_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/v_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/r0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r0</obj_property>
+      <obj_property name="ObjectShortName">r0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/r1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r1</obj_property>
+      <obj_property name="ObjectShortName">r1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/r2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r2</obj_property>
+      <obj_property name="ObjectShortName">r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/g0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">g0</obj_property>
+      <obj_property name="ObjectShortName">g0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/g1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">g1</obj_property>
+      <obj_property name="ObjectShortName">g1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/g2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">g2</obj_property>
+      <obj_property name="ObjectShortName">g2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/b0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b0</obj_property>
+      <obj_property name="ObjectShortName">b0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/b1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b1</obj_property>
+      <obj_property name="ObjectShortName">b1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/b2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b2</obj_property>
+      <obj_property name="ObjectShortName">b2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_state</obj_property>
+      <obj_property name="ObjectShortName">nxt_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d_clk</obj_property>
+      <obj_property name="ObjectShortName">d_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/v_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_clk</obj_property>
+      <obj_property name="ObjectShortName">v_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_lower" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_lower[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d_lower[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/en_lower" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_lower</obj_property>
+      <obj_property name="ObjectShortName">en_lower</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_upper" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_upper[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d_upper[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/en_upper" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_upper</obj_property>
+      <obj_property name="ObjectShortName">en_upper</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/mem_set" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_set[0:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_set[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/mem_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_full</obj_property>
+      <obj_property name="ObjectShortName">mem_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_addr_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_addr_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">d_addr_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/v_addr_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">v_addr_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">v_addr_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/watch_dog_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">watch_dog_counter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">watch_dog_counter[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">d_out[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/rgb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/h_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">h_counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/v_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">v_counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">v_counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/tmp_h_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tmp_h_sync</obj_property>
+      <obj_property name="ObjectShortName">tmp_h_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/tmp_v_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tmp_v_sync</obj_property>
+      <obj_property name="ObjectShortName">tmp_v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/concat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">concat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">concat[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/crap" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">crap</obj_property>
+      <obj_property name="ObjectShortName">crap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_oe_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_oe_l</obj_property>
+      <obj_property name="ObjectShortName">nxt_oe_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_rd_l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_rd_l</obj_property>
+      <obj_property name="ObjectShortName">nxt_rd_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_en_lower" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_en_lower</obj_property>
+      <obj_property name="ObjectShortName">nxt_en_lower</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_en_upper" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_en_upper</obj_property>
+      <obj_property name="ObjectShortName">nxt_en_upper</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/h_counter_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">h_counter_reset</obj_property>
+      <obj_property name="ObjectShortName">h_counter_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/v_counter_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_counter_reset</obj_property>
+      <obj_property name="ObjectShortName">v_counter_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/d_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_in[8:0]</obj_property>
+      <obj_property name="ObjectShortName">d_in[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/color_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">color_en</obj_property>
+      <obj_property name="ObjectShortName">color_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_h_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_h_sync</obj_property>
+      <obj_property name="ObjectShortName">nxt_h_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_v_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_v_sync</obj_property>
+      <obj_property name="ObjectShortName">nxt_v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/nxt_v_addr_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_v_addr_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nxt_v_addr_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/loopback/reset_h" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_h</obj_property>
+      <obj_property name="ObjectShortName">reset_h</obj_property>
+   </wvobject>
+</wave_config>
