@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: loopback.prj
 
@@ -63,7 +63,7 @@ Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
 Shift Register Minimum Size        : 2
 Use DSP Block                      : Auto
-Automatic Register Balancing       : No
+Automatic Register Balancing       : Yes
 
 ---- Target Options
 LUT Combining                      : Auto
@@ -72,16 +72,18 @@ Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
-Pack IO Registers into IOBs        : Auto
+Pack IO Registers into IOBs        : True
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 1
+Optimization Effort                : 2
 Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
@@ -111,6 +113,9 @@ Cores Search Directories           : {"ipcore_dir"  }
 Parsing VHDL file "C:\vhdl_stuff\loopback2\ipcore_dir\mydcm.vhd" into library work
 Parsing entity <mydcm>.
 Parsing architecture <xilinx> of entity <mydcm>.
+Parsing VHDL file "C:\vhdl_stuff\loopback2\ipcore_dir\myram.vhd" into library work
+Parsing entity <myram>.
+Parsing architecture <myram_a> of entity <myram>.
 Parsing VHDL file "C:\vhdl_stuff\loopback2\loopback.vhd" into library work
 Parsing entity <loopback>.
 Parsing architecture <Behavioral> of entity <loopback>.
@@ -123,65 +128,58 @@ Elaborating entity <loopback> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <mydcm> (architecture <xilinx>) from library <work>.
 
+Elaborating entity <myram> (architecture <myram_a>) from library <work>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <loopback>.
     Related source file is "C:\vhdl_stuff\loopback2\loopback.vhd".
-WARNING:Xst:647 - Input <reset_l> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 8-bit register for signal <d_int>.
+WARNING:Xst:647 - Input <txe_l> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <d_lower>.
+    Found 8-bit register for signal <d_upper>.
+    Found 2-bit register for signal <watch_dog_counter>.
     Found 10-bit register for signal <h_counter>.
     Found 10-bit register for signal <v_counter>.
-    Found 1-bit register for signal <rd_l>.
-    Found 1-bit register for signal <oe_l>.
-    Found 1-bit register for signal <wr_l>.
-    Found 1-bit register for signal <siwua>.
-    Found 1-bit register for signal <en_i>.
-    Found 1-bit register for signal <en_o>.
-    Found 8-bit register for signal <data>.
-    Found 1-bit register for signal <h_sync>.
-    Found 1-bit register for signal <v_sync>.
-    Found 1-bit register for signal <tmp_r0>.
-    Found 1-bit register for signal <tmp_r1>.
-    Found 1-bit register for signal <tmp_r2>.
-    Found 1-bit register for signal <tmp_g0>.
-    Found 1-bit register for signal <tmp_g1>.
-    Found 1-bit register for signal <tmp_g2>.
-    Found 1-bit register for signal <tmp_b0>.
-    Found 1-bit register for signal <tmp_b1>.
-    Found 1-bit register for signal <tmp_b2>.
-    Found 1-bit register for signal <r0>.
-    Found 1-bit register for signal <r1>.
-    Found 1-bit register for signal <r2>.
-    Found 1-bit register for signal <g0>.
-    Found 1-bit register for signal <g1>.
-    Found 1-bit register for signal <g2>.
-    Found 1-bit register for signal <b0>.
-    Found 1-bit register for signal <b1>.
-    Found 1-bit register for signal <b2>.
+    Found 9-bit register for signal <rgb>.
     Found 1-bit register for signal <tmp_h_sync>.
     Found 1-bit register for signal <tmp_v_sync>.
-    Found 4-bit register for signal <state>.
+    Found 16-bit register for signal <d_addr_counter>.
+    Found 1-bit register for signal <rd_l>.
+    Found 1-bit register for signal <oe_l>.
+    Found 16-bit register for signal <v_addr_counter>.
+    Found 3-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 11                                             |
-    | Transitions        | 13                                             |
-    | Inputs             | 2                                              |
-    | Outputs            | 6                                              |
+    | States             | 8                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 8                                              |
     | Clock              | d_clk (rising_edge)                            |
+    | Reset              | crap_reset_h_OR_1_o (positive)                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
     | Power Up State     | s0                                             |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 10-bit adder for signal <h_counter[9]_GND_6_o_add_4_OUT> created at line 131.
-    Found 10-bit adder for signal <v_counter[9]_GND_6_o_add_8_OUT> created at line 138.
-    Found 10-bit comparator lessequal for signal <h_counter[9]_GND_6_o_LessThan_19_o> created at line 224
-    Found 10-bit comparator lessequal for signal <v_counter[9]_GND_6_o_LessThan_20_o> created at line 230
+    Found 2-bit adder for signal <watch_dog_counter[1]_GND_6_o_add_11_OUT> created at line 167.
+    Found 10-bit adder for signal <h_counter[9]_GND_6_o_add_17_OUT> created at line 185.
+    Found 10-bit adder for signal <v_counter[9]_GND_6_o_add_19_OUT> created at line 192.
+    Found 16-bit adder for signal <d_addr_counter[15]_GND_6_o_add_28_OUT> created at line 228.
+    Found 8-bit adder for signal <nxt_v_addr_counter<15:8>> created at line 293.
+    Found 8-bit adder for signal <nxt_v_addr_counter<7:0>> created at line 293.
+    Found 10-bit comparator lessequal for signal <n0065> created at line 295
+    Found 10-bit comparator greater for signal <h_counter[9]_PWR_6_o_LessThan_58_o> created at line 295
+    Found 10-bit comparator greater for signal <GND_6_o_v_counter[9]_LessThan_59_o> created at line 295
+    Found 10-bit comparator greater for signal <v_counter[9]_PWR_6_o_LessThan_60_o> created at line 295
+    Found 10-bit comparator lessequal for signal <h_counter[9]_GND_6_o_LessThan_61_o> created at line 297
+    Found 10-bit comparator lessequal for signal <v_counter[9]_GND_6_o_LessThan_62_o> created at line 298
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  64 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   6 Comparator(s).
 	inferred   1 Finite State Machine(s).
 Unit <loopback> synthesized.
 
@@ -195,14 +193,21 @@ Unit <mydcm> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 6
  10-bit adder                                          : 2
-# Registers                                            : 32
- 1-bit register                                        : 28
+ 16-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 12
+ 1-bit register                                        : 4
  10-bit register                                       : 2
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
  8-bit register                                        : 2
-# Comparators                                          : 2
- 10-bit comparator lessequal                           : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 6
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 3
 # FSMs                                                 : 1
 
 =========================================================================
@@ -211,8 +216,12 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/myram.ngc>.
+Loading core <myram> for timing and area information for instance <memory>.
 
 Synthesizing (advanced) Unit <loopback>.
+The following registers are absorbed into counter <watch_dog_counter>: 1 register on signal <watch_dog_counter>.
+The following registers are absorbed into counter <d_addr_counter>: 1 register on signal <d_addr_counter>.
 The following registers are absorbed into counter <h_counter>: 1 register on signal <h_counter>.
 The following registers are absorbed into counter <v_counter>: 1 register on signal <v_counter>.
 Unit <loopback> synthesized (advanced).
@@ -221,12 +230,17 @@ Unit <loopback> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 2
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 2
+# Counters                                             : 4
  10-bit up counter                                     : 2
-# Registers                                            : 44
- Flip-Flops                                            : 44
-# Comparators                                          : 2
- 10-bit comparator lessequal                           : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+# Comparators                                          : 6
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 3
 # FSMs                                                 : 1
 
 =========================================================================
@@ -235,71 +249,41 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <state[1:11]> with one-hot encoding.
-----------------------
+Optimizing FSM <FSM_0> on signal <state[1:8]> with one-hot encoding.
+-------------------
  State | Encoding
-----------------------
- s0    | 00000000001
- s1    | 00000000010
- s2    | 00000000100
- s3    | 00000001000
- s4    | 00000010000
- s5    | 00000100000
- s6    | 00001000000
- s7    | 00010000000
- s8    | 00100000000
- s9    | 01000000000
- s10   | 10000000000
-----------------------
+-------------------
+ s0    | 00000001
+ s1    | 00000010
+ s2    | 00000100
+ s3    | 00001000
+ s4    | 00010000
+ s5    | 00100000
+ s6    | 01000000
+ s7    | 10000000
+-------------------
 
 Optimizing unit <loopback> ...
-WARNING:Xst:1710 - FF/Latch <d_int_0> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_1> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_2> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_3> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_4> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_5> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_6> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_int_7> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_0> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_1> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_2> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_3> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_4> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_5> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_6> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_7> (without init value) has a constant value of 0 in block <loopback>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <en_o> is unconnected in block <loopback>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <en_i> is unconnected in block <loopback>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block loopback, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block loopback, actual ratio is 3.
 
-Final Macro Processing ...
+Pipelining and Register Balancing Report ...
 
 Processing Unit <loopback> :
-	Found 2-bit shift register for signal <r0_OBUF>.
-	Found 2-bit shift register for signal <g0_OBUF>.
-	Found 2-bit shift register for signal <r1_OBUF>.
-	Found 2-bit shift register for signal <r2_OBUF>.
-	Found 2-bit shift register for signal <g1_OBUF>.
-	Found 2-bit shift register for signal <g2_OBUF>.
-	Found 2-bit shift register for signal <b0_OBUF>.
-	Found 2-bit shift register for signal <b1_OBUF>.
-	Found 2-bit shift register for signal <b2_OBUF>.
-	Found 2-bit shift register for signal <state_FSM_FFd3>.
-	Found 2-bit shift register for signal <state_FSM_FFd1>.
+	Register(s) d_upper_3 d_upper_2 d_upper_5 d_upper_4 d_upper_7 d_upper_6 has(ve) been forward balanced into : crap_reset_h_OR_1_o1_FRB.
 Unit <loopback> processed.
+FlipFlop state_FSM_FFd1 has been replicated 1 time(s)
+
+Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 35
- Flip-Flops                                            : 35
-# Shift Registers                                      : 11
- 2-bit shift register                                  : 11
+# Registers                                            : 87
+ Flip-Flops                                            : 87
 
 =========================================================================
 
@@ -322,29 +306,32 @@ Top Level Output File Name         : loopback.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 107
-#      GND                         : 1
-#      INV                         : 4
-#      LUT1                        : 18
-#      LUT2                        : 13
-#      LUT3                        : 13
-#      LUT4                        : 11
-#      LUT5                        : 5
-#      LUT6                        : 3
-#      MUXCY                       : 18
-#      VCC                         : 1
-#      XORCY                       : 20
-# FlipFlops/Latches                : 46
-#      FD                          : 35
-#      FDE                         : 11
-# Shift Registers                  : 11
-#      SRLC16E                     : 11
+# BELS                             : 349
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 33
+#      LUT2                        : 7
+#      LUT3                        : 6
+#      LUT4                        : 7
+#      LUT5                        : 91
+#      LUT6                        : 117
+#      MUXCY                       : 33
+#      MUXF7                       : 9
+#      VCC                         : 2
+#      XORCY                       : 36
+# FlipFlops/Latches                : 92
+#      FD                          : 38
+#      FDE                         : 16
+#      FDR                         : 12
+#      FDRE                        : 26
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 26
-#      IBUF                        : 2
+# IO Buffers                       : 27
+#      IBUF                        : 10
 #      IBUFG                       : 1
-#      OBUF                        : 23
+#      OBUF                        : 16
 # DCMs                             : 1
 #      DCM_SP                      : 1
 
@@ -355,24 +342,25 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              46  out of  11440     0%  
- Number of Slice LUTs:                   78  out of   5720     1%  
-    Number used as Logic:                67  out of   5720     1%  
-    Number used as Memory:               11  out of   1440     0%  
-       Number used as SRL:               11
+ Number of Slice Registers:              71  out of  11440     0%  
+ Number of Slice LUTs:                  267  out of   5720     4%  
+    Number used as Logic:               267  out of   5720     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     83
-   Number with an unused Flip Flop:      37  out of     83    44%  
-   Number with an unused LUT:             5  out of     83     6%  
-   Number of fully used LUT-FF pairs:    41  out of     83    49%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:    276
+   Number with an unused Flip Flop:     205  out of    276    74%  
+   Number with an unused LUT:             9  out of    276     3%  
+   Number of fully used LUT-FF pairs:    62  out of    276    22%  
+   Number of unique control sets:        10
 
 IO Utilization: 
  Number of IOs:                          28
- Number of bonded IOBs:                  26  out of    102    25%  
+ Number of bonded IOBs:                  27  out of    102    26%  
+    IOB Flip Flops/Latches:              21
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
@@ -396,8 +384,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_in                             | DCM_SP:CLKFX           | 42    |
-clk_in                             | DCM_SP:CLK0            | 15    |
+clk_in                             | DCM_SP:CLK0            | 72    |
+clk_in                             | DCM_SP:CLKFX           | 84    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -408,9 +396,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.950ns (Maximum Frequency: 512.794MHz)
-   Minimum input arrival time before clock: 2.374ns
-   Maximum output required time after clock: 3.597ns
+   Minimum period: 3.772ns (Maximum Frequency: 265.135MHz)
+   Minimum input arrival time before clock: 3.663ns
+   Maximum output required time after clock: 4.521ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -419,64 +407,67 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_in'
-  Clock period: 1.950ns (frequency: 512.794MHz)
-  Total number of paths / destination ports: 484 / 57
+  Clock period: 3.772ns (frequency: 265.135MHz)
+  Total number of paths / destination ports: 3322 / 1341
 -------------------------------------------------------------------------
-Delay:               1.950ns (Levels of Logic = 1)
-  Source:            state_FSM_FFd5 (FF)
-  Destination:       wr_l (FF)
+Delay:               3.772ns (Levels of Logic = 2)
+  Source:            d_addr_counter_11 (FF)
+  Destination:       d_addr_counter_0 (FF)
   Source Clock:      clk_in rising
   Destination Clock: clk_in rising
 
-  Data Path: state_FSM_FFd5 to wr_l
+  Data Path: d_addr_counter_11 to d_addr_counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  state_FSM_FFd5 (state_FSM_FFd5)
-     INV:I->O              1   0.206   0.579  wr_l_rstpot1_INV_0 (wr_l_rstpot)
-     FD:D                      0.102          wr_l
+     FDRE:C->Q            35   0.447   1.582  d_addr_counter_11 (d_addr_counter_11)
+     LUT4:I0->O           16   0.203   1.233  state_PWR_6_o_mem_full_AND_6_o3 (state_PWR_6_o_mem_full_AND_6_o2)
+     LUT5:I2->O            1   0.205   0.000  d_addr_counter_0_dpot (d_addr_counter_0_dpot)
+     FDRE:D                    0.102          d_addr_counter_0
     ----------------------------------------
-    Total                      1.950ns (0.755ns logic, 1.195ns route)
-                                       (38.7% logic, 61.3% route)
+    Total                      3.772ns (0.957ns logic, 2.815ns route)
+                                       (25.4% logic, 74.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 53 / 49
 -------------------------------------------------------------------------
-Offset:              2.374ns (Levels of Logic = 2)
-  Source:            rxf_l (PAD)
-  Destination:       state_FSM_FFd11 (FF)
-  Destination Clock: clk_in rising
+Offset:              3.663ns (Levels of Logic = 3)
+  Source:            reset_l (PAD)
+  Destination:       memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Destination Clock: clk_in rising 0.4X
 
-  Data Path: rxf_l to state_FSM_FFd11
+  Data Path: reset_l to memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.845  rxf_l_IBUF (rxf_l_IBUF)
-     LUT3:I0->O            1   0.205   0.000  state_FSM_FFd11-In1 (state_FSM_FFd11-In)
-     FD:D                      0.102          state_FSM_FFd11
+     IBUF:I->O             9   1.222   0.829  reset_l_IBUF (reset_l_IBUF)
+     INV:I->O             32   0.206   1.291  reset_h1_INV_0 (reset_h)
+     begin scope: 'memory:rstb'
+     RAMB16BWER:RSTB           0.115          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                      2.374ns (1.529ns logic, 0.845ns route)
-                                       (64.4% logic, 35.6% route)
+    Total                      3.663ns (1.543ns logic, 2.120ns route)
+                                       (42.1% logic, 57.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
-  Total number of paths / destination ports: 15 / 15
+  Total number of paths / destination ports: 15 / 14
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            oe_l (FF)
-  Destination:       oe_l (PAD)
+Offset:              4.521ns (Levels of Logic = 2)
+  Source:            watch_dog_counter_1 (FF)
+  Destination:       wdi (PAD)
   Source Clock:      clk_in rising
 
-  Data Path: oe_l to oe_l
+  Data Path: watch_dog_counter_1 to wdi
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  oe_l (oe_l_OBUF)
-     OBUF:I->O                 2.571          oe_l_OBUF (oe_l)
+     FD:C->Q               2   0.447   0.721  watch_dog_counter_1 (watch_dog_counter_1)
+     LUT2:I0->O            1   0.203   0.579  _n0206<0>1 (wdi_OBUF)
+     OBUF:I->O                 2.571          wdi_OBUF (wdi)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      4.521ns (3.221ns logic, 1.300ns route)
+                                       (71.2% logic, 28.8% route)
 
 =========================================================================
 
@@ -488,20 +479,20 @@ Clock to Setup on destination clock clk_in
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_in         |    3.871|         |         |         |
+clk_in         |    5.299|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.17 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.32 secs
  
 --> 
 
-Total memory usage is 256052 kilobytes
+Total memory usage is 263900 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   19 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

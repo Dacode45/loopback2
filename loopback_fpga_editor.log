@@ -1,0 +1,17 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\vhdl_stuff\loopback2
+#Date/Time:
+#:T   Tue Apr 12 14:04:25 2016
+#------------------------------
+	#Reading loopback.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "loopback" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2016.04.12.19.04.00
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

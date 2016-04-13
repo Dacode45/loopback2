@@ -1,0 +1,50 @@
+ISim log file
+Running: C:\vhdl_stuff\loopback2\loopback_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/vhdl_stuff/loopback2/loopback_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# source final_test1.log
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# source final_test1.log
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 170 ns
+# run 170 ns
+# run 170 ns
+# run 170 ns
+# run 170 ns
+# isim force add /loopback/reset_l 1 -radix bin
+# isim force add /loopback/reset_l 1 -radix bin
+# run 170 ns
+# run 170 ns
+# isim force add /loopback/data 10101010 -radix bin
+# isim force add /loopback/data 10101010 -radix bin
+# run 170 ns
+# isim force add /loopback/rxf_l 1 -radix bin -value 0 -radix bin -time 50 ns -repeat 100 ns
+# isim force add /loopback/rxf_l 1 -radix bin -value 0 -radix bin -time 50 ns -repeat 100 ns
+# run 170 ns
+# run 17 ns
+# run 17 ns
+# run 100 ms
+at 1583365 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).
+at 3860577208 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0100101101011111, B read address: 0100101101011111
+
+at 3900578008 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0100110000100111, B read address: 0100110000100111
+
+at 26374967488 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111111111111111, B read address: 1111111111111111
+
+at 34961379212 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111111111111111, B read address: 1111111111111111
+
+at 76679973568 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111111111111111, B read address: 1111111111111111
+
+at 85266385292 ps(3), Instance /loopback/memory/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111111111111111, B read address: 1111111111111111
+
