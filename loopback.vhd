@@ -336,7 +336,7 @@ memory : myram
 	--Write MEM Logic
 	concat <= d_lower & d_upper;
 	crap <= '1' when not (d_upper & d_lower) = 0 else '0';
-	d_in <= d_lower(0) & d_upper;
+	d_in <= concat(8 downto 0);
 	mem_full <= '1' when not (d_addr_counter) = 0 else '0';
 	mem_set <= (others => '1') when ((state = s6 or state = s10 or state = s13 ) and rxf_l='0') else (others => '0');
 	
