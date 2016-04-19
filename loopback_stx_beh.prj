@@ -1,3 +1,0 @@
-vhdl isim_temp "ipcore_dir/mydcm.vhd"
-vhdl isim_temp "ipcore_dir/myram.vhd"
-vhdl isim_temp "loopback.vhd"

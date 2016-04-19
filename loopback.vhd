@@ -62,7 +62,7 @@ port
 end component;
 
 	--States
-	TYPE states IS (s0, s1, s2, s3, s3_WAIT, s4, s5, s6, s6_WAIT, s7);
+	TYPE states IS (s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13);
 	
 	SIGNAL state: states := s0;
 	SIGNAL nxt_state : states := s0;
@@ -78,10 +78,9 @@ end component;
 	SIGNAL d_lower : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
 	SIGNAL en_lower: STD_LOGIC:= '0';
 	SIGNAL d_upper : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
-	SIGNAL en_upper: STD_LOGIC:= '0';
+	SIGNAL byte_counter : STD_LOGIC:= '0';
 		--Memory control
 	SIGNAL mem_set : STD_LOGIC_VECTOR(0 downto 0) := (others => '0'); --memory should be set the next tick
-	SIGNAL nxt_mem_set: STD_LOGIC_VECTOR(0 downto 0) := (others => '0');
 	SIGNAL mem_full : STD_LOGIC := '0';
 	SIGNAL d_addr_counter : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
 	SIGNAL v_addr_counter : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
@@ -97,7 +96,12 @@ end component;
 		--Next h_sync
 	SIGNAL tmp_h_sync: STD_LOGIC := '1';
 	SIGNAL tmp_v_sync: STD_LOGIC := '1';
-	
+		--Reset
+	SIGNAL d_reset_meta_l: STD_LOGIC := '0';
+	SIGNAL d_reset_sync_l: STD_LOGIC := '0';
+		--Reset
+	SIGNAL v_reset_meta_l: STD_LOGIC := '0';
+	SIGNAL v_reset_sync_l: STD_LOGIC := '0';
 	------------------------------------------
 	--Internal Signals
 	------------------------------------------
@@ -106,8 +110,8 @@ end component;
 		--Read Control
 	SIGNAL nxt_oe_l : STD_LOGIC;
 	SIGNAL nxt_rd_l : STD_LOGIC;
-	SIGNAL nxt_en_lower : STD_LOGIC;
-	SIGNAL nxt_en_upper : STD_LOGIC;
+	SIGNAL tmp_oe_l : STD_LOGIC := '1';
+	SIGNAL tmp_rd_l : STD_LOGIC := '1';
 		--video counter resets
 	SIGNAL h_counter_reset : STD_LOGIC;
 	SIGNAL v_counter_reset : STD_LOGIC;
@@ -122,7 +126,7 @@ end component;
 	SIGNAL nxt_v_addr_counter: STD_LOGIC_VECTOR(15 downto 0);
 	
 		--Fliped reset
-	SIGNAL reset_h : STD_LOGIC;
+	SIGNAL v_reset_h : STD_LOGIC;
 			
 begin
 
@@ -141,29 +145,44 @@ memory : myram
     addra => d_addr_counter,
     dina => d_in,
     clkb => v_clk,
-    rstb => reset_h,
+    rstb => v_reset_h,
     addrb => v_addr_counter,
     doutb => d_out
   );
-
+	
+	--D Reset
+	d_reset : PROCESS (d_clk)
+	BEGIN
+		if (rising_edge(d_clk)) then
+			d_reset_meta_l <= reset_l;
+			d_reset_sync_l <= d_reset_meta_l;
+		end if;
+	
+	END PROCESS d_reset;
+	
+	
+	--V Reset
+	v_reset : PROCESS (v_clk)	
+	BEGIN
+	if  (rising_edge(v_clk)) then
+			v_reset_meta_l <= reset_l;
+			v_reset_sync_l <= v_reset_meta_l;
+		end if;
+	END PROCESS v_reset;
 	--Handle register  transfers for d clock.
 	d_clkd : PROCESS (d_clk)
 	BEGIN
 		--Handle states
 		if (rising_edge(d_clk)) then
 		
-			if((crap='1') or reset_h='1') then
+			if((crap='1') or d_reset_sync_l='0') then
 				state <= s0;
-			else 
+			elsif (rxf_l = '1') then
+				state <= s1;
+			else
 				state <= nxt_state;
 			end if;
-			--Memoryset
-			mem_set <= nxt_mem_set;
-
-			--Keep Signals In sync
-			en_upper <= nxt_en_upper;
-			en_lower <= nxt_en_lower;
-			
+		
 			--Lower Enable
 			if en_lower = '1' then
 				d_lower <= data;
@@ -173,15 +192,24 @@ memory : myram
 				d_lower <= (others => '0');
 			end if;
 			--Upper Enable
-			if en_upper = '1' then
+			if en_lower = '1' and byte_counter = '1' then
 				d_upper <= d_lower;
 			end if;
 			--Upper Reset
 			if state = s0 then
 				d_upper <= (others => '0');
 			end if;
+			
+			--Byte Counter
+			if ((state=s4 or state = s7 or state = s12) and rxf_l = '0') then
+				byte_counter <= '1';
+			elsif ((state=s6 or state = s13 or state = s10) and rxf_l = '0') then
+				byte_counter <= '0';
+			else
+				byte_counter <= byte_counter;
+			end if;
 			--Watchdog
-			if(state = s0 or state = s1 or state = s2 or state = s3 or state = s3_WAIT or state = s4 or state = s5 or state = s6 or state = s6_WAIT or state = s7) then
+			if(state = s0 or state = s1 or state = s2 or state = s3 or state = s4 or state = s5 or state = s6 or state = s7 or state = s8 or state = s9 or state = s10 or state = s11 or state = s12 or state = s13) then
 				watch_dog_counter <= watch_dog_counter +1;
 			else
 				watch_dog_counter <= (others => '0');
@@ -252,26 +280,28 @@ memory : myram
 	--Handle state transitions
 	state_trans: PROCESS(rxf_l, txe_l, state)
 	BEGIN
-		CASE state IS
-			when s0 => nxt_state <= s1;
-			when s1 => if (rxf_l = '1') then
-								nxt_state <= s1;
-							else
-								nxt_state <= s2;
-							end if;
-			when s2 => nxt_state <= s3;
-			when s3 => nxt_state <= s3_WAIT;
-			when s3_WAIT => nxt_state <= s4;
-			when s4 => if (rxf_l = '1') then
-								nxt_state <= s4;
-							else
-								nxt_state <= s5;
-							end if;
-			when s5 => nxt_state <= s6;
-			when s6 => nxt_state <= s6_WAIT;
-			when s6_WAIT => nxt_state <= s7;
-			when s7 => nxt_state <= s1;
-		END CASE;
+			CASE state IS
+				when s0 => nxt_state <= s1;
+				when s1 => if (byte_counter = '0') then
+									nxt_state <= s2;
+								else
+									nxt_state <= s8;
+								end if;
+				when s2 => nxt_state <= s3;
+				when s3 => nxt_state <= s4;
+				when s4 => nxt_state <= s5;
+				when s5 => nxt_state <= s6;
+				when s6 => nxt_state <= s7;
+				when s7 => nxt_state <= s6;
+				----Already read byte
+				when s8 => nxt_state <= s9;
+				when s9 => nxt_state <= s10;
+				when s10 => nxt_state <= s11;
+				when s11 => nxt_state <= s12;
+				when s12 => nxt_state <= s13;
+				when s13 => nxt_state <= s12;
+				
+			END CASE;
 	END PROCESS state_trans;
 	
 	--Handle CL to Register  transfers
@@ -279,8 +309,8 @@ memory : myram
 	BEGIN
 	
 		if(rising_edge(d_clk)) then
-			rd_l <= nxt_rd_l;
-			oe_l <= nxt_oe_l;
+			tmp_oe_l <= nxt_oe_l;
+			tmp_rd_l <= nxt_rd_l;
 		end if;	
 		
 	END PROCESS d_output;
@@ -293,18 +323,19 @@ memory : myram
 		end if;
 	END PROCESS color_data;
 	
-	--Read  FTDI Logic
-	nxt_oe_l <= '0' when (state = s2 or state = s3 or state = s5 or state = s6) else '1';
-	nxt_rd_l <= '0' when (state = s3 or state = s6) else '1';
-	nxt_en_lower <= '1' when (state = s3 or state = s6) else '0';
-	nxt_en_upper <= '1' when (state = s6 ) else '0';
+	oe_l <= tmp_oe_l when (rxf_l = '0') else '1';
+	rd_l <= tmp_rd_l when (rxf_l = '0') else '1';
 	
+	--Read  FTDI Logic
+	nxt_oe_l <= '0' when (state = s2 or state = s3 or state = s4 or state = s5 or state = s6 or state = s7 or state = s8 or state = s9 or state = s10 or state = s11 or state = s12 or state = s13) else '1';
+	nxt_rd_l <= '0' when (state = s4 or state = s5 or state = s6 or state = s7 or state = s10 or state = s11 or state = s12 or state = s13) else '1';
+	en_lower <= '1' when ((state = s3 or state = s5 or state = s6 or state = s7 or state = s9 or state = s11 or state = s12 or state = s13) and rxf_l= '0') else '0';
 	--Write MEM Logic
-	concat <= d_upper & d_lower;
+	concat <= d_lower & d_upper;
 	crap <= '1' when not (d_upper & d_lower) = 0 else '0';
-	d_in <= concat(8 downto 0);
+	d_in <= d_lower(0) & d_upper;
 	mem_full <= '1' when not (d_addr_counter) = 0 else '0';
-	nxt_mem_set <= (others => '1') when (state = s7 ) else (others => '0');
+	mem_set <= (others => '1') when ((state = s6 or state = s10 or state = s13 ) and rxf_l='0') else (others => '0');
 	
 	--RESET HCOUNTER
 	h_counter_reset <= '1' when (h_counter = 799) else '0';
@@ -335,7 +366,7 @@ memory : myram
 	wr_l <= '1';
 	
 	--Handle reset
-	reset_h <= not reset_l;
+	v_reset_h <= not v_reset_sync_l;
 	
 end Behavioral;
 

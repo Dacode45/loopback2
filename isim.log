@@ -11,12 +11,11 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# source default_test1.log
 # source final_test1.log
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 266672 ps(6), Instance /loopback/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 433342 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).
-/loopback/data: The value 100000000 is bigger than the identifier size in this context.
-# run 1.00 ms
-# run 1.00 ms
+at 766682 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).
+# source final_test1.log
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 766682 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).

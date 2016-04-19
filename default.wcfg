@@ -135,6 +135,7 @@
    <wvobject fp_name="/loopback/d_upper" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">d_upper[7:0]</obj_property>
       <obj_property name="ObjectShortName">d_upper[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/loopback/en_upper" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">en_upper</obj_property>
@@ -193,7 +194,7 @@
    <wvobject fp_name="/loopback/concat" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">concat[15:0]</obj_property>
       <obj_property name="ObjectShortName">concat[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/loopback/crap" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">crap</obj_property>

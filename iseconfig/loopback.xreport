@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-13T14:14:11</DateModified>
+  <DateModified>2016-04-19T12:17:31</DateModified>
   <ModuleName>loopback</ModuleName>
-  <SummaryTimeStamp>2016-04-13T13:58:55</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-04-18T13:54:09</SummaryTimeStamp>
   <SavedFilePath>C:/vhdl_stuff/loopback2/iseconfig/loopback.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/vhdl_stuff/loopback2\</ImplementationReportsDirectory>
   <DateInitialized>2016-04-08T11:17:16</DateInitialized>
