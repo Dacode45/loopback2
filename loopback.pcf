@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Apr 19 13:50:34 2016
+// Written by: Map P.20131013 on Tue Apr 19 14:57:54 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -541,6 +541,8 @@ PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
 PIN clkControl/dcm_sp_inst_pins<1> = BEL "clkControl/dcm_sp_inst" PINNAME
         CLKFB;
 TIMEGRP clkControl_clk0 = BEL "d_reset_meta_l" BEL "d_reset_sync_l" BEL
+        "d_upper_0" BEL "d_upper_1" BEL "d_upper_2" BEL "d_upper_3" BEL
+        "d_upper_4" BEL "d_upper_5" BEL "d_upper_6" BEL "d_upper_7" BEL
         "d_addr_counter_0" BEL "d_addr_counter_1" BEL "d_addr_counter_2" BEL
         "d_addr_counter_3" BEL "d_addr_counter_4" BEL "d_addr_counter_5" BEL
         "d_addr_counter_6" BEL "d_addr_counter_7" BEL "d_addr_counter_8" BEL
@@ -558,9 +560,7 @@ TIMEGRP clkControl_clk0 = BEL "d_reset_meta_l" BEL "d_reset_sync_l" BEL
         "state_FSM_FFd13_BRB2" BEL "state_FSM_FFd13_BRB3" BEL
         "state_FSM_FFd13_BRB5" BEL "watch_dog_counter_1_BRB4" BEL
         "watch_dog_counter_1_BRB5" BEL "state_FSM_FFd11_BRB2" BEL
-        "byte_counter" BEL "d_upper_0" BEL "d_upper_1" BEL "d_upper_2" BEL
-        "d_upper_3" BEL "d_upper_4" BEL "d_upper_5" BEL "d_upper_6" BEL
-        "d_upper_7" BEL "d_lower_0" BEL "d_lower_1" BEL "d_lower_2" BEL
+        "byte_counter" BEL "d_lower_0" BEL "d_lower_1" BEL "d_lower_2" BEL
         "d_lower_3" BEL "d_lower_4" BEL "d_lower_5" BEL "d_lower_6" BEL
         "d_lower_7" PIN
         "memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
@@ -637,9 +637,9 @@ TIMEGRP clk_in = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
         "clkControl/dcm_sp_inst_pins<3>";
 TS_1 = PERIOD TIMEGRP "clk_in" 16.666 ns HIGH 50%;
 TS_2 = PERIOD TIMEGRP "v_clk" 40 ns HIGH 50%;
-TS_clkControl_clk0 = PERIOD TIMEGRP "clkControl_clk0" TS_1 HIGH 50%;
 TS_clkControl_clkfx = PERIOD TIMEGRP "clkControl_clkfx" TS_1 / 0.416666667
         HIGH 50%;
+TS_clkControl_clk0 = PERIOD TIMEGRP "clkControl_clk0" TS_1 HIGH 50%;
 OFFSET = OUT 5.667 ns AFTER COMP "clk_in";
 OFFSET = IN 9 ns VALID 9.5 ns BEFORE COMP "clk_in";
 SCHEMATIC END;

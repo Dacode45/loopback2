@@ -15,7 +15,4 @@ Finished circuit initialization process.
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 766682 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).
-# source final_test1.log
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 766682 ps(5): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/loopback/memory/U0/native_mem_module/mem_module/).
+# run 1.00 ms

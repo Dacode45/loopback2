@@ -78,6 +78,7 @@ end component;
 	SIGNAL d_lower : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
 	SIGNAL en_lower: STD_LOGIC:= '0';
 	SIGNAL d_upper : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');
+	SIGNAL en_upper: STD_LOGIC:= '0';
 	SIGNAL byte_counter : STD_LOGIC:= '0';
 		--Memory control
 	SIGNAL mem_set : STD_LOGIC_VECTOR(0 downto 0) := (others => '0'); --memory should be set the next tick
@@ -192,7 +193,7 @@ memory : myram
 				d_lower <= (others => '0');
 			end if;
 			--Upper Enable
-			if en_lower = '1' and byte_counter = '1' then
+			if en_upper = '1' then
 				d_upper <= d_lower;
 			end if;
 			--Upper Reset
@@ -330,6 +331,8 @@ memory : myram
 	nxt_oe_l <= '0' when (state = s2 or state = s3 or state = s4 or state = s5 or state = s6 or state = s7 or state = s8 or state = s9 or state = s10 or state = s11 or state = s12 or state = s13) else '1';
 	nxt_rd_l <= '0' when (state = s4 or state = s5 or state = s6 or state = s7 or state = s10 or state = s11 or state = s12 or state = s13) else '1';
 	en_lower <= '1' when ((state = s3 or state = s5 or state = s6 or state = s7 or state = s9 or state = s11 or state = s12 or state = s13) and rxf_l= '0') else '0';
+	en_upper <= '1' when ((state = s5 or state = s7 or state = s9 or state = s12) and rxf_l= '0') else '0';
+	
 	--Write MEM Logic
 	concat <= d_lower & d_upper;
 	crap <= '1' when not (d_upper & d_lower) = 0 else '0';

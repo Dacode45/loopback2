@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Reading design: loopback.prj
 
@@ -129,8 +129,8 @@ Elaborating entity <loopback> (architecture <Behavioral>) from library <work>.
 Elaborating entity <mydcm> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <myram> (architecture <myram_a>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\vhdl_stuff\loopback2\loopback.vhd" Line 285: byte_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\vhdl_stuff\loopback2\loopback.vhd" Line 334: Assignment to concat ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\vhdl_stuff\loopback2\loopback.vhd" Line 286: byte_counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\vhdl_stuff\loopback2\loopback.vhd" Line 337: Assignment to concat ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -171,18 +171,18 @@ WARNING:Xst:647 - Input <txe_l> is never used. This port will be preserved and l
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <watch_dog_counter[1]_GND_6_o_add_28_OUT> created at line 213.
-    Found 10-bit adder for signal <h_counter[9]_GND_6_o_add_34_OUT> created at line 231.
-    Found 10-bit adder for signal <v_counter[9]_GND_6_o_add_36_OUT> created at line 238.
-    Found 16-bit adder for signal <d_addr_counter[15]_GND_6_o_add_45_OUT> created at line 274.
-    Found 8-bit adder for signal <nxt_v_addr_counter<15:8>> created at line 344.
-    Found 8-bit adder for signal <nxt_v_addr_counter<7:0>> created at line 344.
-    Found 10-bit comparator lessequal for signal <n0122> created at line 346
-    Found 10-bit comparator greater for signal <h_counter[9]_PWR_6_o_LessThan_95_o> created at line 346
-    Found 10-bit comparator greater for signal <GND_6_o_v_counter[9]_LessThan_96_o> created at line 346
-    Found 10-bit comparator greater for signal <v_counter[9]_PWR_6_o_LessThan_97_o> created at line 346
-    Found 10-bit comparator lessequal for signal <h_counter[9]_GND_6_o_LessThan_98_o> created at line 348
-    Found 10-bit comparator lessequal for signal <v_counter[9]_GND_6_o_LessThan_99_o> created at line 349
+    Found 2-bit adder for signal <watch_dog_counter[1]_GND_6_o_add_28_OUT> created at line 214.
+    Found 10-bit adder for signal <h_counter[9]_GND_6_o_add_34_OUT> created at line 232.
+    Found 10-bit adder for signal <v_counter[9]_GND_6_o_add_36_OUT> created at line 239.
+    Found 16-bit adder for signal <d_addr_counter[15]_GND_6_o_add_45_OUT> created at line 275.
+    Found 8-bit adder for signal <nxt_v_addr_counter<15:8>> created at line 347.
+    Found 8-bit adder for signal <nxt_v_addr_counter<7:0>> created at line 347.
+    Found 10-bit comparator lessequal for signal <n0125> created at line 349
+    Found 10-bit comparator greater for signal <h_counter[9]_PWR_6_o_LessThan_99_o> created at line 349
+    Found 10-bit comparator greater for signal <GND_6_o_v_counter[9]_LessThan_100_o> created at line 349
+    Found 10-bit comparator greater for signal <v_counter[9]_PWR_6_o_LessThan_101_o> created at line 349
+    Found 10-bit comparator lessequal for signal <h_counter[9]_GND_6_o_LessThan_102_o> created at line 351
+    Found 10-bit comparator lessequal for signal <v_counter[9]_GND_6_o_LessThan_103_o> created at line 352
     Summary:
 	inferred   6 Adder/Subtractor(s).
 	inferred  88 D-type flip-flop(s).
@@ -329,15 +329,15 @@ Top Level Output File Name         : loopback.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 378
+# BELS                             : 371
 #      GND                         : 2
 #      INV                         : 5
 #      LUT1                        : 33
 #      LUT2                        : 8
-#      LUT3                        : 14
-#      LUT4                        : 16
-#      LUT5                        : 89
-#      LUT6                        : 132
+#      LUT3                        : 7
+#      LUT4                        : 8
+#      LUT5                        : 90
+#      LUT6                        : 139
 #      MUXCY                       : 33
 #      MUXF7                       : 9
 #      VCC                         : 2
@@ -345,8 +345,8 @@ Primitive and Black Box Usage:
 # FlipFlops/Latches                : 117
 #      FD                          : 61
 #      FDE                         : 5
-#      FDR                         : 25
-#      FDRE                        : 26
+#      FDR                         : 17
+#      FDRE                        : 34
 # RAMS                             : 32
 #      RAMB16BWER                  : 32
 # Clock Buffers                    : 2
@@ -366,15 +366,15 @@ Selected Device : 6slx9tqg144-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              96  out of  11440     0%  
- Number of Slice LUTs:                  297  out of   5720     5%  
-    Number used as Logic:               297  out of   5720     5%  
+ Number of Slice LUTs:                  290  out of   5720     5%  
+    Number used as Logic:               290  out of   5720     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    300
-   Number with an unused Flip Flop:     204  out of    300    68%  
-   Number with an unused LUT:             3  out of    300     1%  
-   Number of fully used LUT-FF pairs:    93  out of    300    31%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    299
+   Number with an unused Flip Flop:     203  out of    299    67%  
+   Number with an unused LUT:             9  out of    299     3%  
+   Number of fully used LUT-FF pairs:    87  out of    299    29%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                          28
@@ -420,9 +420,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 3.878ns (Maximum Frequency: 257.895MHz)
-   Minimum input arrival time before clock: 5.014ns
+   Minimum input arrival time before clock: 5.179ns
    Maximum output required time after clock: 5.999ns
-   Maximum combinational path delay: 5.833ns
+   Maximum combinational path delay: 5.998ns
 
 Timing Details:
 ---------------
@@ -431,7 +431,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_in'
   Clock period: 3.878ns (frequency: 257.895MHz)
-  Total number of paths / destination ports: 3957 / 1407
+  Total number of paths / destination ports: 3909 / 1415
 -------------------------------------------------------------------------
 Delay:               3.878ns (Levels of Logic = 1)
   Source:            state_FSM_FFd4 (FF)
@@ -454,7 +454,7 @@ Delay:               3.878ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
   Total number of paths / destination ports: 184 / 176
 -------------------------------------------------------------------------
-Offset:              5.014ns (Levels of Logic = 2)
+Offset:              5.179ns (Levels of Logic = 2)
   Source:            rxf_l (PAD)
   Destination:       d_addr_counter_0 (FF)
   Destination Clock: clk_in rising
@@ -463,12 +463,12 @@ Offset:              5.014ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.275  rxf_l_IBUF (rxf_l_IBUF)
+     IBUF:I->O            25   1.222   1.440  rxf_l_IBUF (rxf_l_IBUF)
      LUT4:I0->O          144   0.203   1.992  mem_set1 (mem_set)
      FDRE:CE                   0.322          d_addr_counter_0
     ----------------------------------------
-    Total                      5.014ns (1.747ns logic, 3.267ns route)
-                                       (34.8% logic, 65.2% route)
+    Total                      5.179ns (1.747ns logic, 3.432ns route)
+                                       (33.7% logic, 66.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
@@ -485,7 +485,7 @@ Offset:              5.999ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      FD:C->Q               3   0.447   1.015  watch_dog_counter_0_BRB1 (watch_dog_counter_0_BRB1)
      LUT6:I0->O            2   0.203   0.981  watch_dog_counter_1_rstpot (watch_dog_counter_1)
-     LUT6:I0->O            1   0.203   0.579  _n0241<0>1 (wdi_OBUF)
+     LUT6:I0->O            1   0.203   0.579  _n0245<0>1 (wdi_OBUF)
      OBUF:I->O                 2.571          wdi_OBUF (wdi)
     ----------------------------------------
     Total                      5.999ns (3.424ns logic, 2.575ns route)
@@ -495,7 +495,7 @@ Offset:              5.999ns (Levels of Logic = 3)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               5.833ns (Levels of Logic = 3)
+Delay:               5.998ns (Levels of Logic = 3)
   Source:            rxf_l (PAD)
   Destination:       oe_l (PAD)
 
@@ -503,12 +503,12 @@ Delay:               5.833ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.256  rxf_l_IBUF (rxf_l_IBUF)
+     IBUF:I->O            25   1.222   1.421  rxf_l_IBUF (rxf_l_IBUF)
      LUT3:I0->O            1   0.205   0.579  Mmux_oe_l11 (oe_l_OBUF)
      OBUF:I->O                 2.571          oe_l_OBUF (oe_l)
     ----------------------------------------
-    Total                      5.833ns (3.998ns logic, 1.835ns route)
-                                       (68.5% logic, 31.5% route)
+    Total                      5.998ns (3.998ns logic, 2.000ns route)
+                                       (66.7% logic, 33.3% route)
 
 =========================================================================
 
@@ -526,8 +526,8 @@ clk_in         |    5.299|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.84 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.62 secs
  
 --> 
 
