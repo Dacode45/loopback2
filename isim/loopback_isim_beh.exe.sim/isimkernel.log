@@ -2,9 +2,9 @@ Command line:
    loopback_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50202
+     -socket  51268
 
-Tue Apr 19 14:54:53 2016
+Tue Apr 19 15:27:44 2016
 
 
- Elaboration Time: 1.51563 sec
+ Elaboration Time: 1.76563 sec

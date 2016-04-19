@@ -279,7 +279,7 @@ memory : myram
 	END PROCESS d_addr_gen;
 	
 	--Handle state transitions
-	state_trans: PROCESS(rxf_l, txe_l, state)
+	state_trans: PROCESS(rxf_l, txe_l, state, byte_counter)
 	BEGIN
 			CASE state IS
 				when s0 => nxt_state <= s1;
@@ -352,7 +352,7 @@ memory : myram
 	nxt_v_sync <= '0' when (0 <= v_counter and v_counter < 2) else '1';
 	h_sync <= tmp_h_sync;
 	v_sync <= tmp_v_sync;
-	--color
+	--color 
 	r2 <= rgb(8);
 	r1 <= rgb(7);
 	r0 <= rgb(6);
