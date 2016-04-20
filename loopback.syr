@@ -225,3 +225,313 @@ Macro Statistics
 =========================================================================
 
 Reading core <ipcore_dir/myram.ngc>.
+Loading core <myram> for timing and area information for instance <memory>.
+
+Synthesizing (advanced) Unit <loopback>.
+The following registers are absorbed into counter <watch_dog_counter>: 1 register on signal <watch_dog_counter>.
+The following registers are absorbed into counter <d_addr_counter>: 1 register on signal <d_addr_counter>.
+The following registers are absorbed into counter <h_counter>: 1 register on signal <h_counter>.
+The following registers are absorbed into counter <v_counter>: 1 register on signal <v_counter>.
+Unit <loopback> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+# Comparators                                          : 6
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 3
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:14]> with one-hot encoding.
+-------------------------
+ State | Encoding
+-------------------------
+ s0    | 00000000000001
+ s1    | 00000000000010
+ s2    | 00000000001000
+ s3    | 00000000010000
+ s4    | 00000000100000
+ s5    | 00000001000000
+ s6    | 00000010000000
+ s7    | 00000100000000
+ s8    | 00000000000100
+ s9    | 00001000000000
+ s10   | 00010000000000
+ s11   | 00100000000000
+ s12   | 01000000000000
+ s13   | 10000000000000
+-------------------------
+
+Optimizing unit <loopback> ...
+INFO:Xst:2261 - The FF/Latch <v_addr_counter_0> in Unit <loopback> is equivalent to the following FF/Latch, which will be removed : <h_counter_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block loopback, actual ratio is 4.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <loopback> :
+	Register(s) state_FSM_FFd11 has(ve) been backward balanced into : state_FSM_FFd11_BRB2 .
+	Register(s) state_FSM_FFd13 has(ve) been backward balanced into : state_FSM_FFd13_BRB0 state_FSM_FFd13_BRB1 state_FSM_FFd13_BRB2 state_FSM_FFd13_BRB3 state_FSM_FFd13_BRB5.
+	Register(s) tmp_oe_l has(ve) been backward balanced into : tmp_oe_l_BRB0 tmp_oe_l_BRB1.
+	Register(s) tmp_rd_l has(ve) been backward balanced into : tmp_rd_l_BRB2 tmp_rd_l_BRB3 tmp_rd_l_BRB4 tmp_rd_l_BRB5.
+	Register(s) watch_dog_counter_0 has(ve) been backward balanced into : watch_dog_counter_0_BRB0 watch_dog_counter_0_BRB1 watch_dog_counter_0_BRB4.
+	Register(s) watch_dog_counter_1 has(ve) been backward balanced into : watch_dog_counter_1_BRB4 watch_dog_counter_1_BRB5.
+Unit <loopback> processed.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 112
+ Flip-Flops                                            : 112
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : loopback.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 371
+#      GND                         : 2
+#      INV                         : 5
+#      LUT1                        : 33
+#      LUT2                        : 8
+#      LUT3                        : 7
+#      LUT4                        : 8
+#      LUT5                        : 90
+#      LUT6                        : 139
+#      MUXCY                       : 33
+#      MUXF7                       : 9
+#      VCC                         : 2
+#      XORCY                       : 35
+# FlipFlops/Latches                : 117
+#      FD                          : 61
+#      FDE                         : 5
+#      FDR                         : 17
+#      FDRE                        : 34
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 27
+#      IBUF                        : 10
+#      IBUFG                       : 1
+#      OBUF                        : 16
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              96  out of  11440     0%  
+ Number of Slice LUTs:                  290  out of   5720     5%  
+    Number used as Logic:               290  out of   5720     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    299
+   Number with an unused Flip Flop:     203  out of    299    67%  
+   Number with an unused LUT:             9  out of    299     3%  
+   Number of fully used LUT-FF pairs:    87  out of    299    29%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  27  out of    102    26%  
+    IOB Flip Flops/Latches:              21
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_in                             | DCM_SP:CLKFX           | 85    |
+clk_in                             | DCM_SP:CLK0            | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.878ns (Maximum Frequency: 257.895MHz)
+   Minimum input arrival time before clock: 5.179ns
+   Maximum output required time after clock: 5.999ns
+   Maximum combinational path delay: 5.998ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 3.878ns (frequency: 257.895MHz)
+  Total number of paths / destination ports: 3909 / 1415
+-------------------------------------------------------------------------
+Delay:               3.878ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd4 (FF)
+  Destination:       d_addr_counter_0 (FF)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising
+
+  Data Path: state_FSM_FFd4 to d_addr_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   0.912  state_FSM_FFd4 (state_FSM_FFd4)
+     LUT4:I1->O          144   0.205   1.992  mem_set1 (mem_set)
+     FDRE:CE                   0.322          d_addr_counter_0
+    ----------------------------------------
+    Total                      3.878ns (0.974ns logic, 2.904ns route)
+                                       (25.1% logic, 74.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
+  Total number of paths / destination ports: 184 / 176
+-------------------------------------------------------------------------
+Offset:              5.179ns (Levels of Logic = 2)
+  Source:            rxf_l (PAD)
+  Destination:       d_addr_counter_0 (FF)
+  Destination Clock: clk_in rising
+
+  Data Path: rxf_l to d_addr_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.222   1.440  rxf_l_IBUF (rxf_l_IBUF)
+     LUT4:I0->O          144   0.203   1.992  mem_set1 (mem_set)
+     FDRE:CE                   0.322          d_addr_counter_0
+    ----------------------------------------
+    Total                      5.179ns (1.747ns logic, 3.432ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
+  Total number of paths / destination ports: 30 / 14
+-------------------------------------------------------------------------
+Offset:              5.999ns (Levels of Logic = 3)
+  Source:            watch_dog_counter_0_BRB1 (FF)
+  Destination:       wdi (PAD)
+  Source Clock:      clk_in rising
+
+  Data Path: watch_dog_counter_0_BRB1 to wdi
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  watch_dog_counter_0_BRB1 (watch_dog_counter_0_BRB1)
+     LUT6:I0->O            2   0.203   0.981  watch_dog_counter_1_rstpot (watch_dog_counter_1)
+     LUT6:I0->O            1   0.203   0.579  _n0248<0>1 (wdi_OBUF)
+     OBUF:I->O                 2.571          wdi_OBUF (wdi)
+    ----------------------------------------
+    Total                      5.999ns (3.424ns logic, 2.575ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               5.998ns (Levels of Logic = 3)
+  Source:            rxf_l (PAD)
+  Destination:       oe_l (PAD)
+
+  Data Path: rxf_l to oe_l
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.222   1.421  rxf_l_IBUF (rxf_l_IBUF)
+     LUT3:I0->O            1   0.205   0.579  Mmux_oe_l11 (oe_l_OBUF)
+     OBUF:I->O                 2.571          oe_l_OBUF (oe_l)
+    ----------------------------------------
+    Total                      5.998ns (3.998ns logic, 2.000ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    5.299|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.13 secs
+ 
+--> 
+
+Total memory usage is 315028 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

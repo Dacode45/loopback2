@@ -12,3 +12,18 @@
  isim force add /loopback/reset_l 1 -radix bin
  run 17 ns
  run 17 ns
+ isim force add /loopback/data 1 -radix bin
+ run 17ns
+ run 17ns
+ isim force add /loopback/data 11 -radix bin
+ run 17ns
+ isim force add /loopback/data 111 -radix bin
+ run 17ns
+ isim force add /loopback/data 1111 -radix bin
+ run 17ns
+ isim force add /loopback/data 11111 -radix bin
+ run 17ns
+ isim force add /loopback/data 11111 -radix bin
+ run 17ns
+ run 1 ms
+ run 1 ms
